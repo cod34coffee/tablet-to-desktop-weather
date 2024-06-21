@@ -238,6 +238,9 @@ body {
 
 }
 
+
+
+
 /*Below is for the tablet view*/
 @media (min-width: 768px) { 
     .mobile-view {
@@ -317,4 +320,139 @@ body {
     }
     
     
+}
+
+
+
+
+/*This below is going to be for styling when the
+screen is at a min of 992px and larger. */
+@media (min-width: 992px) {
+    /*Everything inside of here is  what will change when the
+    screen reaches 992px.*/
+
+    /*Let's start with the width and height of the item.*/
+    .mobile-view {
+        width: 726px;
+        height: 2200px;
+        
+      
+    }
+
+}
+
+@media (min-width: 1200px) {
+ 
+
+  
+    .mobile-view {
+        width: 780px;
+        height: 403px;
+        flex-direction: row;
+        align-content: center;
+        position:relative;
+        padding-left: 0px;
+        
+      
+        
+      
+    }
+
+    .header {
+        width: 380px;
+        height: 473px;
+        justify-self: start;
+        gap: 90px;
+    }
+
+    .weather-info2{
+        display: none;
+    }
+
+
+    .map{
+        display: none;
+    }
+
+    /* Forecast section */
+    .forecast {
+        display: flex;
+        gap: 1px;
+        overflow-x: scroll;
+        white-space:nowrap;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+        justify-content: start;
+        
+       
+       
+    }
+
+   .forecast-day{
+    gap: 10px;
+   }
+
+    
+    .forecast-wrapper{
+        width: 115%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-self: center;
+    }
+    
+    .forecast::-webkit-scrollbar{
+        display: none;
+    }
+
+    .forecast-day{
+        width: 12px;
+        height: 85px;
+    }
+
+    .forecast-day img {
+        width: 38px;
+        height: 35px;
+    }
+
+    .forecast-day .day{
+        font-size: small;
+    }
+
+    .forecast-day .temp{
+        font-size: medium;
+        font-weight:700;
+    }
+
+    .moreInfo{
+        display: none;
+    }
+
+    .lgColTwo{
+        width: 35%;
+        position: relative;
+        float: right;
+    }
+
+  
+
+    .details{
+        gap: 20px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .value{
+        font-weight:lighter;
+        
+    }
+
+    .change-location{
+        width: 322px;
+        height: 45px;
+    }
+
+    
+
 }
