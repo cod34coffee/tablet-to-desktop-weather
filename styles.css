@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    
 
 }
 
@@ -20,12 +21,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 35px;
-    background-color: #343d4b;
+    background-color: #222831;
     gap: 30px;
     color: #ffffff;
     width: 360px;
-    height: 1220px;
+    height: 1180px;
     border-radius: 10px;
+    
   
 }
 
@@ -38,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 90px;
+  
 }
 
 .header-content {
@@ -84,6 +87,7 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    margin-bottom: 30px;
     
 }
 
@@ -96,9 +100,10 @@ body {
 }
 
 .forecast-wrapper{
-    width: 100%;
+    width: 113%;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-bottom: 30px;
   
 }
 
@@ -129,9 +134,10 @@ body {
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #272E37;
     border-radius: 10px;
     text-align: center;
+   
 }
 
 .forecast-day.active {
@@ -193,12 +199,13 @@ body {
 
 /* Map section */
 .map {
-    width:117%;
+    width:112%;
     height: auto;
     margin-left: 0px;
     background: url(assets/rectangle-3.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 40px;
   
 }
 .mapName{
@@ -212,7 +219,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 332px;
+    width: 398px;
     height: 50px;
     background: linear-gradient(90.8deg, rgba(144, 217, 224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
     border-radius: 10px;
@@ -239,13 +246,23 @@ body {
 }
 
 
+.lgColTwo{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -40px;
+ 
+}
 
+.lgColOne{
+    width: 100%;
+    margin-left: -40px;
+}
 
 /*Below is for the tablet view*/
 @media (min-width: 768px) { 
     .mobile-view {
         width: 526px;
-        height: 2200px;
+        height: 2150px;
         
       
     }
@@ -263,14 +280,15 @@ body {
 
 
     .change-location {
-        width: 432px;
+        width: 532px;
         height: 60px;
+        margin-left: 17px;
     }
 
     .map {
-        width:110%;
+        width:112%;
         height: auto;
-        
+        margin-left: -12px;
       
     }
 
@@ -281,6 +299,7 @@ body {
         width: 110%;
         border-radius: 25px;
         align-content: center;
+        margin-bottom: 30px;
         
         
     }
@@ -312,10 +331,12 @@ body {
         flex-wrap: wrap;
         overflow-x: scroll;
         justify-content: center;
+        margin-left: -30px;
     }
     
     .forecast-day {
-        width: 70px;
+        width: 80px;
+        
     
     }
     
@@ -338,6 +359,28 @@ screen is at a min of 992px and larger. */
         
       
     }
+    .moreInfo{
+        width: 106%;
+    }
+
+  .forecast-wrapper{
+        margin-left: -15px;
+  }
+
+    .forecast-day {
+        width: 100px;
+        
+    
+    }
+
+    .map{
+        width: 109%;
+    }
+
+    .change-location{
+        width: 101%;
+        
+    }
 
 }
 
@@ -346,12 +389,13 @@ screen is at a min of 992px and larger. */
 
   
     .mobile-view {
-        width: 780px;
+        width: 750px;
         height: 403px;
         flex-direction: row;
         align-content: center;
         position:relative;
         padding-left: 0px;
+        padding-right: 90px;
         
       
         
@@ -383,21 +427,20 @@ screen is at a min of 992px and larger. */
         scrollbar-width: none;
         flex-wrap: nowrap;
         justify-content: start;
-        
+        margin-left: 1px;
        
        
     }
 
-   .forecast-day{
-    gap: 10px;
-   }
+
 
     
     .forecast-wrapper{
-        width: 115%;
+        width: 100%;
         overflow-x: auto;
         overflow-y: hidden;
-        justify-self: center;
+        margin-left: 20px;
+        
     }
     
     .forecast::-webkit-scrollbar{
@@ -405,8 +448,9 @@ screen is at a min of 992px and larger. */
     }
 
     .forecast-day{
-        width: 12px;
+        width: 15px;
         height: 85px;
+        gap: 10px;
     }
 
     .forecast-day img {
@@ -428,15 +472,19 @@ screen is at a min of 992px and larger. */
     }
 
     .lgColTwo{
-        width: 35%;
+        width: 50%;
         position: relative;
         float: right;
+        margin-left: -30px;
+        padding-left: 25px;
+        
     }
 
   
 
     .details{
         gap: 20px;
+        
     }
 
     .title{
@@ -449,7 +497,7 @@ screen is at a min of 992px and larger. */
     }
 
     .change-location{
-        width: 322px;
+        width: 379px;
         height: 45px;
     }
 
