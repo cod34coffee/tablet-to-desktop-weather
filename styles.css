@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    /*This was added*/
+    overflow-y: hidden;
     
 
 }
@@ -102,7 +104,7 @@ body {
 .forecast-wrapper{
     width: 113%;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y:hidden;
     margin-bottom: 30px;
   
 }
