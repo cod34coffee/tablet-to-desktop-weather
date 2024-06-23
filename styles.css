@@ -12,8 +12,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
-    /*This was added*/
-    overflow-y: hidden;
+    overflow-x: hidden;
+    
     
 
 }
@@ -260,6 +260,10 @@ body {
     margin-left: -40px;
 }
 
+.weather-info3-wrapper{
+    display: none;
+}
+
 /*Below is for the tablet view*/
 @media (min-width: 768px) { 
     .mobile-view {
@@ -357,7 +361,7 @@ screen is at a min of 992px and larger. */
     /*Let's start with the width and height of the item.*/
     .mobile-view {
         width: 726px;
-        height: 2200px;
+        height: 2090px;
         
       
     }
@@ -388,7 +392,10 @@ screen is at a min of 992px and larger. */
 
 @media (min-width: 1200px) {
  
-
+   body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+   }
   
     .mobile-view {
         width: 750px;
@@ -399,6 +406,7 @@ screen is at a min of 992px and larger. */
         padding-left: 0px;
         padding-right: 90px;
         
+        
       
         
       
@@ -408,8 +416,75 @@ screen is at a min of 992px and larger. */
         width: 380px;
         height: 473px;
         justify-self: start;
-        gap: 90px;
+        gap: 185px;
     }
+
+    .day{
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .date {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .location img {
+        width: 22px;
+        margin-left: -1px;
+  
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 550;
+    }
+    
+
+    .weather-info {
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+    }
+
+    .weather-info img{
+        width: 70px;
+        height: 60px;
+        margin-left: -5px;
+    }
+
+    .temperature {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .condition{
+        font-size: 19px;
+    }
+
+    .weather-info3-wrapper{
+        display: flex;
+        gap: 20px;
+       
+
+    }
+    
+    .weather-info3 {
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight:500;
+        
+    }
+
 
     .weather-info2{
         display: none;
@@ -450,9 +525,17 @@ screen is at a min of 992px and larger. */
     }
 
     .forecast-day{
-        width: 15px;
+        width: 12px;
         height: 85px;
         gap: 10px;
+       
+    }
+
+    .forecast-day:hover{
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 154px;
+        height: 85px;
     }
 
     .forecast-day img {
