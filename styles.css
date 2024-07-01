@@ -360,7 +360,7 @@ screen is at a min of 992px and larger. */
 
     /*Let's start with the width and height of the item.*/
     .mobile-view {
-        width: 786px;
+        width: 756px;
         height: 2190px;
         
       
@@ -380,7 +380,7 @@ screen is at a min of 992px and larger. */
     }
 
     .map{
-        width: 109%;
+        width: 108.5%;
     }
 
     .change-location{
